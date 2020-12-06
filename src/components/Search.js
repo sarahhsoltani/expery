@@ -1,5 +1,5 @@
 import React from 'react';
-import "../Css/search.css"
+import "../Css/search.css";
 import { Navbar, Nav, NavDropdown,Button,Form,FormControl } from "react-bootstrap";
 export default function Search() {
     return (

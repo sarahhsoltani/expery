@@ -1,26 +1,33 @@
 import React from 'react';
 import {connect } from 'react-redux';
 import "../Css/style.css";
+import Profile from './Profile';
+
 
 const ListUsers = (props) => {
   return (
    
    
       
-    <div >
-        
-        <form className="form-inline col-md-12 box-item  mb-3 mt-5">
+    <div className=" container-fluid  " >
+        <div className="row ">
+        <div className="col-md-2">
+        <Profile/>
+      </div>
+    
+       <div className="col-md-10 profile">
+       <form className="form-inline  box-item  mb-3 mt-5">
   
   <div className="form-group mx-sm-3 mb-2 text-center myForm">
   
-    <input type="text" class="form-control input-item" id="inputPassword2" placeholder="Put your profile---"/>
+    <input type="text" class="form-control input-item" id="text" placeholder="Put your profile---"/>
   </div>
   <button type="submit" class="btn btn-primary pl-5 pr-5 box-button mb-2">
 how we can help you</button>
 </form>
 
   <h3 className="title-experts">All experts</h3>
-         <div className="all-expert">
+         <div className="all-expert ">
     {props.movie.map((el,i)=>(
         <div key={el.key}  >
             
@@ -31,23 +38,32 @@ how we can help you</button>
              <p className="card-text role">{el.Role}</p>
              <div className="row">
              <i className="far  fa-comment-dots comment fa-2x mr-3 "></i>
-             <a href="#" class="btn more-infos">See more infos</a>
+             <a href="index.js" class="btn more-infos">See more infos</a>
              </div>
             
-            </div>
+            </div> 
             <div>  <img src={el.pays} class="card-img-top image2" alt="..."/></div>
          </div>
        
      </div>
     ))}
     </div>
-    
+       </div>
       
-      
-      
+              
+       
+         
+          
+     
    
-    
-    </div>
+
+          </div>
+         
+
+
+   
+</div>
+
   );
 };
 const mapStateToProps = state => ({

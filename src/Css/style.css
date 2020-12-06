@@ -35,14 +35,19 @@ body{
     color: #5499C7 ;
     font-weight: 500;
 }
+.profile{
+    border-left: 3px solid rgba(0,0,0,.1) !important;
+   
+}
 .all-expert {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+   
   }
   .box-item{
       text-align: center !important;
-      margin-left:500px;
+      margin-left:100px;
   
       
   }
@@ -62,3 +67,25 @@ body{
    color:white;
    font-weight: 500;
   }
+  .icon-user{
+      font-size: 60px;
+      color:#007bff ;
+  }
+  li h5 {
+      color:#566573 ;
+      letter-spacing: 2px;
+      font-weight: 500;
+  }
+ .meet{
+    font-size: 22px;
+ }
+ .calender{
+     font-size: 10px;
+ }
+
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 3px solid rgba(0,0,0,.1) !important;
+}
