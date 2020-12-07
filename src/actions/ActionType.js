@@ -1,6 +1,4 @@
-export const ADD_MOVIE="ADD_MOVIE";
-export const DELETE_MOVIE="DELETE_MOVIE";
-export const EDIT_MOVIE="EDIT_MOVIE";
-export const SEARCH_MOVIE="SEARCH_MOVIE";
-export const SEARCH_STAR="SEARCH_RATE";
- 
+export const ADD_EXPERT="ADD_EXPERT";
+export const DELETE_EXPERT="DELETE_EXPERT";
+export const EDIT_EXPERT="EDIT_EXPERT";
+export const SEARCH_EXPERT="SEARCH_EXPERT";

@@ -1,8 +1,8 @@
 import {
-    ADD_MOVIE,
-    DELETE_MOVIE,
-    SEARCH_MOVIE,
-    EDIT_MOVIE,SEARCH_STAR
+    ADD_EXPERT,
+    DELETE_EXPERT,
+    SEARCH_EXPERT,
+    EDIT_EXPERT
   } from "../actions/ActionType";
   const initialState = {
     
@@ -47,39 +47,68 @@ import {
         pays:"data:image/png;base64,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",
         trailer:"https://www.youtube.com/embed/yi4xJGebtuk"
       }
+    ],
+    Table:[
+      {
+        name:"Abdelwaheb Suissi",
+        email:"abdelwahebSuissi@gmail.com",
+        speciality:"E-commerce",
+        country:"Tunisia"
+      },
+      {
+        name:"Elena Florenciyou",
+        email:"ElenaFlorenciyou@gmail.com",
+        speciality:"Finance",
+        country:"France"
+      },
+      {
+        name:"Manelboudawara",
+        email:"Manelboudawara@gmail.com",
+        speciality:"Developpement",
+        country:"Egypte"
+      },
+      {
+        name:"MariaEstri",
+        email:"MariaEstri@gmail.com",
+        speciality:"Marketing",
+        country:"Malizia"
+      }
     ]
   };
   const reducer = (state = initialState, action) => {
     switch (action.type) {
-      case ADD_MOVIE:
-        return { ...state, MovieList: state.MovieList.concat(action.payload) };
+      case ADD_EXPERT:
+        return { ...state, Table: state.Table.concat(action.payload) };
   
-      case DELETE_MOVIE:
+      case DELETE_EXPERT:
         return {
           ...state,
-          MovieList: state.MovieList.filter(el => el.key !== action.payload)
+          Table: state.Table.filter(expert => expert.id !== action.payload)
         };
   
-      case SEARCH_MOVIE:
+        
+
+      case SEARCH_EXPERT:
         return { ...state, UserInput: action.payload };
   
-      case EDIT_MOVIE:
+      case EDIT_EXPERT:
         return {
           ...state,
-          MovieList: state.MovieList.map(el =>
-            el.key === action.payload.key
+          Table: state.Table.map(expert =>
+            expert.key === action.payload.key
               ? {
-                  ...el,
+                  ...expert,
                   name: action.payload.name,
-                  image: action.payload.image,
-                  year: action.payload.year
+                  speciality: action.payload.speciality,
+                  country: action.payload.country,
+                  email:action.payload.email
+
                 }
-              : el
+              : expert
           )
         };
   
-        case SEARCH_STAR:
-            return {   ...state,rate:action.payload};
+        
          
    default:
         return state;

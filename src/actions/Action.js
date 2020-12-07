@@ -1,23 +1,20 @@
-import { ADD_MOVIE, DELETE_MOVIE,SEARCH_MOVIE,SEARCH_STAR,EDIT_MOVIE } from "./ActionType";
+import { ADD_EXPERT, DELETE_EXPERT,SEARCH_EXPERT,EDIT_EXPERT } from "./ActionType";
 
-export function addMovie(payload) {
-  return { type: ADD_MOVIE, payload };
+export function addExpert(payload) {
+  return { type: ADD_EXPERT, payload };
 }
-export function DeleteMovie(payload) {
-  return { type: DELETE_MOVIE, payload };
-}
-
-export function SearchMovie(payload) {
-  return { type: SEARCH_MOVIE, payload };
+export function DeleteExpert(payload) {
+  return { type: DELETE_EXPERT, payload };
 }
 
-
-
-export function EditMovie(payload) {
-  return { type: EDIT_MOVIE, payload };
+export function SearchExpert(payload) {
+  return { type: SEARCH_EXPERT, payload };
 }
-export function SearchStar(payload){
-    return {type:SEARCH_STAR,payload}
+
+
+
+export function EditExpert(payload) {
+  return { type: EDIT_EXPERT, payload };
 }
 
 

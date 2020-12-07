@@ -1,11 +1,14 @@
 import React from 'react';
 import "../Css/search.css";
+
 import { Navbar, Nav, NavDropdown,Button,Form,FormControl } from "react-bootstrap";
 export default function Search() {
     return (
         <div>
           <Navbar  expand="lg">
-  <Navbar.Brand href="#home" className="expery">Expery</Navbar.Brand>
+  <Navbar.Brand href="#home" className="expery">
+   Expery
+  </Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav text-center ml-5 " className=" nav-itemm">
   <Form inline className="ml-5">

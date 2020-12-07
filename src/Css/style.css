@@ -89,3 +89,9 @@ hr{
     border: 0;
     border-top: 3px solid rgba(0,0,0,.1) !important;
 }
+.edit{
+    font-size: 12px;
+}
+.text-danger{
+    font-size: 21px;
+}
