@@ -11,21 +11,21 @@ function App() {
     <div className="App">
    
   
-   {/* <Search/>
-    <hr/> */}
-    <DashboardAdmin/>
+   <Search/>
+    <hr/>
+    {/* <DashboardAdmin/> */}
 
-    {/* <ListUsers/> */}
+    <ListUsers/>
     <Footer/>
   
 
-    {/* <Router>
+    <Router>
     <Switch>
     <Route exact path="/admin" component={DashboardAdmin} />
      <Route exact path="/meetings" component={Meetings}/>
    
    </Switch>
-   </Router> */}
+   </Router>
   
     </div>
   );
